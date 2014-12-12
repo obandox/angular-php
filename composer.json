@@ -1,0 +1,67 @@
+{
+    "name": "obandox/angular-php",
+    "minimum-stability": "dev",
+    "description": "Full angularjs for PHP",
+    "keywords": [ "angularjs", "less", "php" ],
+    "homepage": "https://github.com/obandox/angular-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Obandox",
+            "email": "obandox@obando.com.ve",
+            "homepage": "http://obando.com.ve/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1",
+        "symfony/process": "~2.1",
+        "kriswallsmith/assetic": "*",
+        "leafo/lessphp": "*",
+        "cssmin/cssmin": "*",
+        "ptachoire/cssembed": "*",
+        "mrclay/minify": "*",
+        "kamicane/packager": "*",
+        "joliclic/javascript-packer": "*",
+        "patchwork/jsqueeze": "~1.0"
+    },
+    "autoload": {
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "cssmin/cssmin",
+                "version": "3.0.1",
+                "dist": { "url": "http://cssmin.googlecode.com/files/cssmin-v3.0.1.php", "type": "file" },
+                "autoload": { "classmap": [ "cssmin-v3.0.1.php" ] }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kamicane/packager",
+                "version": "1.0",
+                "dist": { "url": "https://github.com/kamicane/packager/archive/1.0.zip", "type": "zip" },
+                "autoload": { "classmap": [ "." ] }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "joliclic/javascript-packer",
+                "version": "1.1",
+                "dist": { "url": "http://joliclic.free.fr/php/javascript-packer/telechargement.php?id=2&action=telecharger", "type": "zip" },
+                "autoload": { "classmap": [ "class.JavaScriptPacker.php" ] }
+            }
+        }
+    ]
+}
